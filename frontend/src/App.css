@@ -1,0 +1,50 @@
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: radial-gradient(circle at top, #fff, #f1f5f9 60%);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-content {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.placeholder {
+  padding: 2rem;
+  border: 1px dashed #94a3b8;
+  border-radius: 12px;
+  background-color: #fff;
+  color: #475569;
+}
+
+.active-role {
+  margin-top: 1rem;
+  background: #0f172a;
+  color: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active-role button {
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.selection-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.selection-card:hover {
+  border-color: #cbd5e1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.selection-card.selected {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.selection-card__image {
+  width: 100%;
+  height: 120px;
+  background-color: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.selection-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selection-card__placeholder {
+  font-size: 2rem;
+  color: #cbd5e1;
+}
+
+.selection-card__content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.selection-card__title {
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.selection-card__price {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.selection-card__check {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #3b82f6;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.2s;
+}
+
+.selection-card.selected .selection-card__check {
+  opacity: 1;
+  transform: scale(1);
+}

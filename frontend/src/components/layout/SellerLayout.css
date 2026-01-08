@@ -1,0 +1,58 @@
+.seller-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.seller-panel {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 30px rgb(15 23 42 / 8%);
+  padding: 1.5rem;
+}
+
+.seller-panel form {
+  display: grid;
+  gap: 1rem;
+}
+
+.seller-panel label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.seller-panel select {
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+}
+
+.variation-group {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.variation-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.price-highlight {
+  border-radius: 16px;
+  padding: 1.5rem;
+  background: linear-gradient(120deg, #1d4ed8, #3b82f6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.price-highlight strong {
+  font-size: 2rem;
+}

@@ -1,0 +1,72 @@
+.admin-section {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgb(15 23 42 / 8%);
+  border: 1px solid #e2e8f0;
+}
+
+.admin-section h3 {
+  margin-top: 0;
+}
+
+.admin-section form {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-section label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.admin-section input,
+.admin-section select {
+  border: 1px solid #cbd5f5;
+  border-radius: 8px;
+  padding: 0.65rem 0.8rem;
+  font: inherit;
+}
+
+.admin-section button[type='submit'] {
+  justify-self: flex-start;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.25rem;
+  cursor: pointer;
+}
+
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.admin-list__item {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8fafc;
+}
+
+.admin-list__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.admin-list__actions button {
+  border-radius: 6px;
+  border: 1px solid #cbd5f5;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0.35rem 0.75rem;
+}

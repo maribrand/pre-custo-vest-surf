@@ -1,0 +1,44 @@
+.user-selector {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgb(15 23 42 / 8%);
+}
+
+.user-selector h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.user-selector__options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.user-selector__card {
+  border: 1px solid #cbd5f5;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #f8fafc;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font: inherit;
+  color: inherit;
+}
+
+.user-selector__card strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.user-selector__card.is-active {
+  border-color: #2563eb;
+  background-color: #dbeafe;
+  box-shadow: 0 8px 24px rgb(37 99 235 / 25%);
+}
+
+.user-selector__card:hover {
+  border-color: #2563eb;
+}
