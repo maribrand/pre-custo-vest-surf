@@ -115,7 +115,7 @@ export async function getAttributesByModel(modelId: string): Promise<ModelAttrib
 
 // Cria uma variante (option + model_option)
 export async function createVariant(
-  data: Omit<ModelVariant, 'id' | 'totalValue'>,
+  data: Omit<ModelVariant, 'id' | 'totalValue' | 'modelId'>,
   modelId: string
 ): Promise<ModelVariant> {
   // Verifica se a option já existe
@@ -172,7 +172,7 @@ export async function createVariant(
 
 // Cria um atributo (option + model_option)
 export async function createAttribute(
-  data: Omit<ModelAttribute, 'id'>,
+  data: Omit<ModelAttribute, 'id' | 'modelId'>,
   modelId: string
 ): Promise<ModelAttribute> {
   // Verifica se a option já existe

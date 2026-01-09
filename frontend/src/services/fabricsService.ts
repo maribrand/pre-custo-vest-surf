@@ -86,7 +86,7 @@ export async function getAllFabrics(): Promise<Fabric[]> {
 
 // Cria um tecido global e associa a um modelo
 export async function createFabric(
-  data: Omit<Fabric, 'id' | 'totalCost'>,
+  data: Omit<Fabric, 'id' | 'totalCost' | 'modelId'>,
   modelId: string
 ): Promise<Fabric> {
   // Verifica se o tecido já existe (por nome)
@@ -120,7 +120,7 @@ export async function createFabric(
   }
 
   // Associa o tecido ao modelo (ou atualiza se já existir)
-  const { data: model } = await getProductModelById(modelId);
+  const model = await getProductModelById(modelId);
   const consumption = model?.fabricConsumption || 0;
 
   const { error: assocError } = await supabase
