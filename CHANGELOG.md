@@ -8,6 +8,15 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 ## [Não Publicado]
 
 ### Corrigido
+- **Problemas de Build e Deploy (2025-01-09)**:
+  - Corrigido `vercel.json` com configurações conflitantes (removido buildCommand, outputDirectory, installCommand)
+  - Adicionado arquivo `vite-env.d.ts` com definições de tipo para `import.meta.env`
+  - Removidos 10 arquivos JavaScript duplicados na pasta `services/` (mantidos apenas TypeScript)
+  - Removidos arquivos de configuração duplicados (`vite.config.js`, `vite.config.d.ts`)
+  - Corrigidas assinaturas de tipo TypeScript em `createVariant`, `createAttribute` e `createFabric`
+  - Corrigido destructuring incorreto em `fabricsService.ts`
+  - Build agora funciona sem erros: `npm run build` concluído com sucesso
+  - Documentado checklist de configuração da Vercel em `VERCEL_CONFIG_CHECKLIST.md`
 - **Recursão Infinita nas RLS Policies**:
   - Corrigido erro crítico de "infinite recursion detected" nas policies do Supabase
   - Criada função auxiliar `is_admin()` com `SECURITY DEFINER` para evitar recursão
