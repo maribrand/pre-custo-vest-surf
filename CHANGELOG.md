@@ -8,6 +8,14 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 ## [Não Publicado]
 
 ### Corrigido
+- **RLS Policies e Arquivos Duplicados (2025-01-14)**:
+  - Criada migração `20260109000000_fix_rls_policies.sql` para corrigir políticas de acesso
+  - Removidos 34 arquivos JavaScript duplicados que causavam conflitos
+  - Corrigidas policies para permitir usuários autenticados acessarem dados
+  - Admins agora têm acesso completo a todas operações
+  - Usuários podem gerenciar seus próprios orçamentos
+  - Eliminados timeouts ao carregar variantes, atributos, tecidos e modelos
+  - Criado guia completo de correção: `CORRIGIR_ERROS_DEPLOY.md`
 - **Problemas de Build e Deploy (2025-01-09)**:
   - Corrigido `vercel.json` com configurações conflitantes (removido buildCommand, outputDirectory, installCommand)
   - Adicionado arquivo `vite-env.d.ts` com definições de tipo para `import.meta.env`
